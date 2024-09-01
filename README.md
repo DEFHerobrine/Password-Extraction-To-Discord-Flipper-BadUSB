@@ -5,7 +5,7 @@ tested on windows 10.
 
     HOW TO:
 1. Create discord webhook.
-2. Replace %webhook% with your discord webhook.
+2. Replace "YOUR DISCORD WEBHOOK" with your discord webhook.
 3. Save and move it to your flipper.
 
 Hi everyone! This video is for educational purposes only and aims to demonstrate ethical hacking techniques. Always use these skills responsibly and ensure you have proper authorization before testing any systems.

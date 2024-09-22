@@ -1,7 +1,7 @@
 this is a modied version of https://github.com/CharlesTheGreat77/BADUSB/blob/main/web2Discord/Web2Discord.txt. 
-tested on windows 10.
+tested on windows 10. Unless otherwise specified in the file name, this is made for Win10.
 
- - Script sends all saved passwords to a discord webhook
+ - Script sends all saved browser passwords to a discord webhook
 
     HOW TO:
 1. Create discord webhook.

